@@ -227,8 +227,19 @@ article .title {
 display: flex;
 justify-content: space-between;
 }
+
+.post-tags ul.tags li {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  margin-right: 20px;;
+}
+.post-tags ul.tags li:last-child {
+  margin-right: 0px;
+}
+
 .tags li::before{
-  content: "🏷 ";
+  content: "🏷️ ";
 }
 .tags a{
   border-bottom: 3px solid var(--maincolor); 
